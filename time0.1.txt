@@ -1,0 +1,155 @@
+Starting
+Initializing graph
+Done initializing graph
+Starting simulation
+Step:0
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Iteration Time: 0.006285429000854492
+Step:0
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Iteration Time: 0.005469083786010742
+Step:1
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Iteration Time: 0.0034334659576416016
+Step:2
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Iteration Time: 0.005359172821044922
+Step:3
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Iteration Time: 0.004753589630126953
+Step:4
+Starting
+Initializing graph
+Done initializing graph
+Starting simulation
+Step:0
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Iteration Time: 1.4192979335784912
+Step:0
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Iteration Time: 1.4819116592407227
+Step:1
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Iteration Time: 1.4046032428741455
+Step:2
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Iteration Time: 1.9523544311523438
+Step:3
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Iteration Time: 4.141482353210449
+Step:4
+Starting
+Initializing graph
+Done initializing graph
+Starting simulation
+Step:0
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Iteration Time: 1.3874640464782715
+Step:0
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Iteration Time: 1.4204187393188477
+Step:1
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Iteration Time: 1.3423035144805908
+Step:2
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Iteration Time: 1.3902051448822021
+Step:3
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Iteration Time: 1.3729023933410645
+Step:4
+Starting
+Initializing graph
+Done initializing graph
+Starting simulation
+Step:0
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:1
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:2
+Starting avalanche processing

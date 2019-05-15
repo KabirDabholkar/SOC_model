@@ -1,0 +1,3551 @@
+Starting
+Initializing graph
+Done initializing graph
+Starting simulation
+Step:0
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Iteration Time: 0.006145954132080078
+Step:0
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Iteration Time: 0.005459308624267578
+Step:1
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Iteration Time: 0.003365755081176758
+Step:2
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Iteration Time: 0.0053408145904541016
+Step:3
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Iteration Time: 0.28433704376220703
+Step:4
+Starting
+Initializing graph
+Done initializing graph
+Starting simulation
+Step:0
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:1
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:2
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:3
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:4
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:5
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:6
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:7
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:8
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:9
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:10
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:11
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:12
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:13
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:14
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:15
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:16
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:17
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:18
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:19
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:20
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:21
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:22
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:23
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:24
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:25
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:26
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:27
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:28
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:29
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:30
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:31
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:32
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:33
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:34
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:35
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:36
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:37
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:38
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:39
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:40
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:41
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:42
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:43
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:44
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:45
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:46
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:47
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:48
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:49
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:50
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:51
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:52
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:53
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:54
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:55
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:56
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:57
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:58
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:59
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:60
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:61
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:62
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:63
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:64
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:65
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:66
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:67
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:68
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:69
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:70
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:71
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:72
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:73
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:74
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:75
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:76
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:77
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:78
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:79
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:80
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:81
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:82
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:83
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:84
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:85
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:86
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:87
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:88
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:89
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:90
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:91
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:92
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:93
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:94
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:95
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:96
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:97
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:98
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:99
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:100
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:101
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:102
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:103
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:104
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:105
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:106
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:107
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:108
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:109
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:110
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:111
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:112
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:113
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:114
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:115
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:116
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:117
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:118
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:119
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:120
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:121
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:122
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:123
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:124
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:125
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:126
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:127
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:128
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:129
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:130
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:131
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:132
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:133
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:134
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:135
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:136
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:137
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:138
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:139
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:140
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:141
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:142
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:143
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:144
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:145
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:146
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:147
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:148
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:149
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:150
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:151
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:152
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:153
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:154
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:155
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:156
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:157
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:158
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:159
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:160
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:161
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:162
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:163
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:164
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:165
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:166
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:167
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:168
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:169
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:170
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:171
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:172
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:173
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:174
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:175
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:176
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:177
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:178
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:179
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:180
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:181
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:182
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:183
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:184
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:185
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:186
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:187
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:188
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:189
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:190
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:191
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:192
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:193
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:194
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:195
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:196
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:197
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:198
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:199
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:200
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:201
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:202
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:203
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:204
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:205
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:206
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:207
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:208
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:209
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:210
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:211
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:212
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:213
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:214
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:215
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:216
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:217
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:218
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:219
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:220
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:221
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:222
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:223
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:224
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:225
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:226
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:227
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:228
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:229
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:230
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:231
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:232
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:233
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:234
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:235
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:236
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:237
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:238
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:239
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:240
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:241
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:242
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:243
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:244
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:245
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:246
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:247
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:248
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:249
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:250
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:251
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:252
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:253
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:254
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:255
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:256
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:257
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:258
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:259
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:260
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:261
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:262
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:263
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:264
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:265
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:266
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:267
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:268
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:269
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:270
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:271
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:272
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:273
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:274
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:275
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:276
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:277
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:278
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:279
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:280
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:281
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:282
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:283
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:284
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:285
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:286
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:287
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:288
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:289
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:290
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:291
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:292
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:293
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:294
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:295
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:296
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:297
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:298
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:299
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:300
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:301
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:302
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:303
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:304
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:305
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:306
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:307
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:308
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:309
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:310
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:311
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:312
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:313
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:314
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:315
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:316
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:317
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:318
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:319
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:320
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:321
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:322
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:323
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:324
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:325
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:326
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:327
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:328
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:329
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:330
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:331
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:332
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:333
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:334
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:335
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:336
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:337
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:338
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:339
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:340
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:341
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:342
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:343
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:344
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:345
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:346
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:347
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:348
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:349
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:350
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:351
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:352
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:353
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:354
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:355
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:356
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:357
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:358
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:359
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:360
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:361
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:362
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:363
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:364
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:365
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:366
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:367
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:368
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:369
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:370
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:371
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:372
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:373
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:374
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:375
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:376
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:377
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:378
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:379
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:380
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:381
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:382
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:383
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:384
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:385
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:386
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:387
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:388
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:389
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:390
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:391
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:392
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:393
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:394
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:395
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:396
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:397
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:398
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:399
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:400
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:401
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:402
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:403
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:404
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:405
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:406
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:407
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:408
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:409
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:410
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:411
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:412
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:413
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:414
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:415
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:416
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:417
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:418
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:419
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:420
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:421
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:422
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:423
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:424
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:425
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:426
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:427
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:428
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:429
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:430
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:431
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:432
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:433
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:434
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:435
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:436
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:437
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:438
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:439
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:440
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:441
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:442
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:443
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:444
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:445
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:446
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:447
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:448
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:449
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:450
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:451
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:452
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:453
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:454
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:455
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:456
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:457
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:458
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:459
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:460
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:461
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:462
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:463
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:464
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:465
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:466
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:467
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:468
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:469
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:470
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:471
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:472
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:473
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:474
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:475
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:476
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:477
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:478
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:479
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:480
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:481
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:482
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:483
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:484
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:485
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:486
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:487
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:488
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:489
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:490
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:491
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:492
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:493
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:494
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:495
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:496
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:497
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:498
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Step:499
+Starting avalanche processing
+Avalanche processing over
+Starting Rewiring
+Finding kmax
+Done kmax
+Rewiring over
+Iteration Time: 950.6935050487518
+Step:499

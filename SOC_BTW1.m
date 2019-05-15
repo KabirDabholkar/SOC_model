@@ -1,0 +1,395 @@
+clear all;
+N=100;
+%f=.1;
+%f=1-f;
+pr=.5;
+K=4;
+steps=8000;
+tic
+G=erdosRenyi(N,pr,K);
+rng(1)
+%  plotGraphBasic(G,1,'lala')
+A=G.Adj;
+A=full(A);
+A=A.*(1-eye(N,N));
+A=triu(A);
+
+storex=zeros(N,steps);
+storex_noava=zeros(N,steps);
+%% symmetric connectivity matrix
+A=A+A';
+degree=sum(A)' ;
+
+temp=[1:N^2];
+R=reshape(temp,N,N)';
+R=R.*A;
+A_ini=A;
+A_=A;
+for i=1:N
+A_(i,i)=-degree(i);
+end
+
+%% PLOTTING DEG DIST
+degree=sum(A)' ;
+temp = tabulate(degree);
+tbl=temp(:,1:2);
+degdist=plot(log(tbl(:,1)),log(tbl(:,2)),'O');
+[tbl(:,1) log(tbl(:,1))]';
+[tbl(:,2) log(tbl(:,2))]';
+%%
+
+%% Initial State
+x=zeros(N,1);
+for i=1:N
+    if degree(i)>0
+    x(i)=randi([0 degree(i)-1]);
+    else
+            x(i)=0;
+    end
+
+end
+%% EVOLUTION
+count=1;
+for i=1:steps
+if mod(i,steps/100)==0
+i
+end
+%% Particle addition
+
+xb=x;
+storex_noava(:,i)=x;
+storeA_noava(:,:,i)=A;
+add_site=randi([1 N]);
+
+x(add_site)=x(add_site)+1;
+storex(:,count)=x;
+count=count+1;
+
+%% Avalanche processing
+degree=sum(A)';
+xc=degree+1.*(degree==0);
+spikes=x>=xc;
+ava=spikes;
+temp1=zeros(N,1);
+if sum(degree.*spikes)>0 
+    [x,temp,temp1]=avalanche(x,A,f,N);
+    storex(:,count:count+size(temp,2)-1)=temp;
+    count=count+1;
+end
+ava=(ava+temp1)>0;
+a=sum(ava);
+
+%% REWIRING
+R=R.*A;
+Ruse=R;
+for c1=1:N
+    for c2=1:N
+       if Ruse(c1,c2) <=Ruse(c2,c1)
+           Ruse(c1,c2)=-1;
+       else
+           Ruse(c2,c1)=-1;
+       end
+    end
+end
+B = reshape(Ruse',[],1);
+%R=  reshape(temp,N,N)';
+[irrel, indices]=maxk(B,a);
+v=indices;
+ie=floor((v-1)/N)+1;
+je=mod(v,N)  ;
+je=je+N.*(je==0);
+
+'1';
+ A_before=A;
+ sum(sum(A));
+% flag=0;
+
+for j=1:a
+    if je(j)~=add_site && A(ie(j),je(j))~=0 && A(add_site,je(j))==0
+        
+        A(ie(j),je(j))=0;
+        A(je(j),ie(j))=0;
+        
+        
+        A(add_site,je(j))=1;
+        A(je(j),add_site)=1;
+        R(add_site,je(j))=0;
+        R(je(j),add_site)=0;
+        R=(R+1).*A;
+    end
+end
+
+% sum(sum(A));
+
+ inisumA=sum(sum(A_ini));
+
+ if inisumA~=sum(sum(A))|| sum(sum(A<0))>0
+     'here'
+         break
+ end
+ %sum(sum(A))
+
+end
+%{
+sum(sum(A))
+ inisumA=sum(sum(A_ini))
+ A_before
+ A
+ A-A_before
+ a
+ add_site
+  [ie je]
+%}
+%% PLOTTING DEG DIST
+degree=sum(A)' ;
+temp = tabulate(degree);
+tbl=temp(:,1:2);
+degdist=plot((tbl(:,1)),(tbl(:,2)),'O');
+tbl_log=lnbin(tbl,10);
+data_powerlawx=log(tbl(:,1)); 
+
+data_powerlawy=log(tbl(:,2));
+degdist=plot(log(tbl(:,1)),log(tbl(:,2)),'O');
+[tbl(:,1) log(tbl(:,1))]';
+[tbl(:,2) log(tbl(:,2))]';
+    %sum(sum(A))
+%save('data_powerlaw.mat','data_powerlaw')
+%%
+%}
+%{
+%% PLOTTING
+
+plot(0)
+hold on
+for i=1:N
+plot(storex(i,:))
+end
+hold off
+
+plot(0)
+hold on
+for i=1:N
+plot(storex_noava(i,:))
+end
+hold off
+%}
+%% toc
+toc
+%% FUNCTIONS
+function [x,storextemp,ava]=avalanche(x,A,f,N)
+
+count=1;
+degree=sum(A)';
+xc=degree+1.*(degree==0);
+spikes=x>=xc;
+ava=spikes;
+while sum(degree.*spikes)>0
+    ava=(ava+spikes)>0;
+    spikes=x>=degree;
+
+x=x+A*spikes;
+x=x-spikes.*degree;
+x=x-(rand(N,1)>f);
+x=x.*(x>0);
+storextemp(:,count)=x;
+count=count+1;
+
+end
+end
+function [G]=erdosRenyi(nv,p,Kreg)
+%Funciton [G]=edosRenyi(nv,p,Kreg) generates a random graph based on
+%the Erdos and Renyi algoritm where all possible pairs of 'nv' nodes are
+%connected with probability 'p'. 
+%
+% Inputs:
+%   nv - number of nodes 
+%   p  - rewiring probability
+%   Kreg - initial node degree of for regular graph (use 1 or even numbers)
+%
+% Output:
+%   G is a structure inplemented as data structure in this as well as other
+%   graph theory algorithms.
+%   G.Adj   - is the adjacency matrix (1 for connected nodes, 0 otherwise).
+%   G.x and G.y -   are row vectors of size nv wiht the (x,y) coordinates of
+%                   each node of G.
+%   G.nv    - number of vertices in G
+%   G.ne    - number of edges in G
+%
+%Created by Pablo Blinder. blinderp@bgu.ac.il
+%
+%Last update 25/01/2005
+%build regular lattice 
+A=sparse(nv,nv);
+Kreg=fix(abs(Kreg)/2);Kreg=(Kreg<1)+Kreg;
+for k=1:Kreg
+    A=sparse(A+diag(ones(1,length(diag(A,k))),k)+diag(ones(1,length(diag(A,nv-k))),nv-k));
+end
+ne0=nnz(A);
+%find connected pairs
+[v1,v2]=find(A);
+% P=permPairs(nv);%my version is faster
+Dis=(rand(length(v1),1)<=p);%pairs to disconnect
+A(v1(Dis),v2(Dis))=0;
+vDis=unique([v1(Dis),v2(Dis)]);%disconnected vertices
+nDis=ne0-nnz(A);sum(Dis);
+%cycle trough disconnected pairs
+disconPairs=[v1(Dis),v2(Dis)];
+for n=1:nDis
+    %choose one of the vertices from the disconnected pair
+    i=ceil(rand*size(disconPairs,1));
+    j=logical(1+rand>0.5);
+    vDisToRec=disconPairs(i,j);
+    %find non adjacent vertices and reconnect
+    adj=[find(A(:,vDisToRec)) ; find(A(vDisToRec,:))'];
+    nonAdj=setdiff(1:nv,adj);
+    vToRec=nonAdj(ceil(rand*length(nonAdj)));
+    S=sort([vDisToRec vToRec]);
+    A(S(1),S(2))=1;
+end
+[x,y]=getNodeCoordinates(nv);
+%make adjacency matrix symetric
+A=A+fliplr((flipud(triu(A))));
+G=struct('Adj',A,'x',x','y',y','nv',nv,'ne',nnz(A));
+end
+function [x,y]=getNodeCoordinates(nv)
+%Adapted from circle.m by Zhenhai Wang <zhenhai@ieee.org>. For more details
+%see under  MATLAB Central >  File Exchange > Graphics > Specialized
+%Plot and Graph Types > Draw a circle.
+center=[0,0];
+theta=linspace(0,2*pi,nv+1);
+rho=ones(1,nv+1);%fit radius and nv
+[X,Y] = pol2cart(theta',rho');
+X=X+center(1);
+Y=Y+center(2);
+x=X(1:end-1)*10;
+y=Y(1:end-1)*10;
+end
+function P=permPairs(N)
+%Produces all pairs of pairs from 1 to N.
+%It is ~30% to 50% faster that nchoosek(1:N,2).
+%Created by Pablo 02/12/2003
+ini_i=1;
+ini_j=ini_i+1;
+r0=1;
+P=[];
+for i=ini_i:N-1
+    lj=N-ini_i;
+    P(:,r0:lj+r0-1)=[ones(1,lj)*i;ini_j:N];
+    r0=r0+lj;
+    ini_i=ini_i+1;
+    ini_j=ini_i+1;
+end
+P=P';
+end
+function plotGraphBasic(G,markerSize,addText)
+
+%function plotGraph(G) plots graph G.
+% Inputs:
+%   G is a structure inplemented as data structure in this as well as other
+%   graph theory algorithms.
+%   G.Adj   - is the adjacency matrix (1 for connected nodes, 0 otherwise).
+%   G.x and G.y -   are row vectors of size nv wiht the (x,y) coordinates of
+%                   each node of G.
+%   G.nv    - number of vertices in G
+%   G.ne    - number of edges in G
+%
+%   markerSize  -  controls the size of each node in the graph
+%   addText - toggles text display (1 - on, 0 off).
+%   Note: The color of each node is computed based on the
+%         its degree. 
+%
+%Created by Pablo Blinder. blinderp@bgu.ac.il
+%
+%Last updated 25/01/2005
+%generate plot. Decompose to single lines for more detailed formatting
+figure;
+[XX,YY]=gplot(G.Adj,[G.x' G.y'],'k-');
+i=~isnan(XX);
+XX=XX(i);YY=YY(i);
+XX=reshape(XX,2,length(XX)/2);
+YY=reshape(YY,2,length(YY)/2);
+hLines=line(XX,YY);
+set(hLines,'color','k');
+hold on;
+kv=full(diag(G.Adj*G.Adj));
+kvGroups=unique(setdiff(kv,0));
+nGroups=length(kvGroups);
+map=jet(max(kvGroups)); 
+kv(kv<1)=1;%scale lowest to first 
+Pv=num2cell(map(kv,:),2);
+if kvGroups==1; kvGroups=2; end %Safeguard aginst single values
+set(gca,'Clim',[1 max(kvGroups)]);
+Pn(1)={'MarkerFaceColor'};
+% Now draw the plot, one line per point.
+h = [];
+for i=1:G.nv
+    h = [h;plot(G.x(i),G.y(i),'ko')];
+end
+ht=[];
+ti=1;
+if addText
+    for i=1:G.nv
+        if ti
+            ht = [ht;text(G.x(i)+0.1*G.x(i),G.y(i)+0.1*G.y(i),num2str(i))];
+            ti=0;
+        else
+            ti=1;
+        end
+    end
+end
+set(h,'LineWidth',1,...
+    'MarkerEdgeColor','k',...
+    'MarkerSize',markerSize,Pn,Pv);
+set(gca,'Visible','Off','YDir','reverse');
+colormap(map);
+hc=colorbar;
+set(hc,'FontSize',8,'FontW','Demi')
+set(hc,'Visible','off')
+set(gcf,'Color','w')
+end
+
+% This function take the input of a data vector x, which is to be binned;
+% it also takes in the amount bins one would like the data binned into. The
+% output is two vectors, one containing the normalised frequency of each bin 
+% (Freq), the other, the midpoint of each bin (midpts).
+% Added and error to the binned frequency: eFreq (As of June 30 2010). If this
+% option is not required, just call the function without including the third out
+% put; i.e.: [midpts Freq]=lnbin(x,BinNum). 
+
+function [midpts Freq eFreq]=lnbin(x,BinNum)
+x=sort(x);
+i=1;
+while x(i)<=0;
+   i=i+1; 
+end
+str = num2str((length(x)-i)/length(x)*100);
+stuff='Percentage of input vec binned ';
+disp([stuff str])
+FPT=x(i:length(x));
+LFPT=log(FPT);
+max1=log( ceil(max(FPT)) );
+min1=log(floor(min(FPT)));
+% min1=1;
+LFreq=zeros(BinNum,1);
+LTime=zeros(BinNum,1);
+Lends=zeros(BinNum,2);
+step=(max1-min1)/BinNum;
+% ------------ LOG Binning Data ------------------------
+for i=1:length(FPT)
+    for k=1:BinNum
+       if( (k-1)*step+min1 <= LFPT(i) && LFPT(i) < k*step+min1)
+           LFreq(k)=LFreq(k)+1;
+       end
+        LTime(k)=k*step-(0.5*step)+min1;
+        Lends(k,1)=(k-1)*step+min1;
+        Lends(k,2)=(k)*step+min1;
+    end  
+end 
+ends=exp(Lends);
+widths=ends(1:length(ends),2)-ends(1:length(ends),1);
+Freq=LFreq./widths./length(x);
+eFreq=1./sqrt(LFreq).*Freq;
+midpts = exp(LTime);
+end
+%SOC_BTW1.m
+%Displaying SOC_BTW1.m.
