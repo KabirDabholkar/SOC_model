@@ -7,13 +7,13 @@ import heapq
 import pickle as pkl
 import time
 
-F=0.001
+F=0.1
 
 to_save={}
 save_loc="/home/kabir/SOC_model/data.pkl"
 save_loc="/storage/subhadra/kabir/output/SOC_model/data.pkl"
 
-time_loc="/home/kabir/SOC_model/time"+str(F)+".txt"
+time_loc="/home/kabir/SOC_model/time_2_"+str(F)+".txt"
 
 def WRITE(text):
     with open(time_loc,'a') as time_file:
@@ -53,21 +53,22 @@ def my_kmax(R,k):
 
 
 WRITE("Starting")
-N = 1000
-f = F#0.1 #f leak (fraction of leak)
+N = 2000
+f = 0.1 #f leak (fraction of leak)
 f = 1-f
 mean_degree = 4
 
 K = 4
-steps = 500
+steps = 100
 #tic
 np.random.seed(1)
-WRITE("Initializing graph")
-G = nx.erdos_renyi_graph(N,mean_degree/N)
-WRITE("Done initializing graph")
+G_undir = nx.erdos_renyi_graph(N,mean_degree/N)
+G_dir = nx.DiGraph()
+G_dir.add_nodes_from(range(N))
+G_dir.add_edges_from(G_undir.edges())
 
-A = nx.to_numpy_matrix(G, dtype=np.int)
-to_save['initA']=A
+
+A = nx.to_numpy_matrix(G_dir.to_undirected(), dtype=np.int)
 #fig = plt.figure(figsize=(5, 5))
 #plt.title("Adjacency Matrix")
 #plt.imshow(A,cmap="Greys",interpolation="none")   
@@ -78,12 +79,21 @@ to_save['initA']=A
 #storex = np.zeros((N,steps))
 #storex_noava = np.zeros((N,steps))
 
+temp = np.arange(0,2*G_undir.number_of_edges())
+R = [(temp[2*i],temp[2*i+1]) for i in range(G_undir.number_of_edges())]
+recency={}
+for edge,rec in zip(G_dir.edges(),R):
+    recency[edge]=rec
+nx.set_edge_attributes(G_dir,recency,name="recency")
+#R = temp.reshape(N,N)
+#R = np.multiply(R,A)
 
-temp = np.arange(0,N**2)
-R = temp.reshape(N,N)
-R = np.multiply(R,A)
-A_ini = A.copy()
+
 degree = np.array(np.sum(A,0))[0]
+G_undir.clear()
+del(R)
+del(temp)
+del(recency)
 
 
 
@@ -134,11 +144,9 @@ for i in range(steps):
     a = np.sum(ava)
     WRITE("Avalanche processing over")
 
-    WRITE("Starting Rewiring")    
+ 
     ##Rewiring
     
-    R = np.multiply(R,A)
-    Ruse = R.copy()
     """
     for c1 in range(N):
         for c2 in range(N):
@@ -147,39 +155,35 @@ for i in range(steps):
             else:
                 Ruse[c2,c1] = -1
     #"""
-    
-    max_endpoints=[]
-    max_endpoints_r=[]
-    for edge in G.edges():
-        c1,c2=edge
-        if R[c1,c2] <= R[c2,c1]:
-            max_endpoints.append((c1,c2))
-            max_endpoints_r.append(R[c1,c2])
-        else:
-            max_endpoints.append((c2,c1))
-            max_endpoints_r.append(R[c2,c1])
-    
-    indices = np.array(heapq.nlargest(a, range(len(max_endpoints_r)), max_endpoints_r.__getitem__))
-    i,j=tuple(zip(*[max_endpoints[i] for i in indices]))
-    
-    WRITE("Finding kmax")
-    ie,je = my_kmax(Ruse,a)
+    WRITE("Finding kmax indices")    
+    if a!=0:
+        edges=list(G_dir.edges())
+        R=[max(G_dir[edge[0]][edge[1]]['recency']) for edge in edges] #takes maximum of the two endpoints for each edge
+        indices = np.array(heapq.nlargest(a, range(len(R)), R.__getitem__))
+        ie,je=tuple(zip(*[edges[i] for i in indices]))
     
     WRITE("Done kmax")    
     
     
-
+    WRITE("Starting Rewiring")   
     for j in range(a):
-        if (je[j] != add_site) & (A[int(ie[j]),int(je[j])] != 0) & (A[add_site,je[j]] == 0):
-            #print('hi')
-            A[int(ie[j]),int(je[j])] = 0
-            A[int(je[j]),int(ie[j])] = 0
-
-            A[add_site,je[j]] = 1
-            A[je[j],add_site] = 1
-
-            R = np.multiply((R+1),A)
-    WRITE("Rewiring over")    
+        if (je[j] != add_site) & ((add_site,je[j]) not in G_dir.to_undirected().edges()):
+            if (ie[j],je[j]) in G_dir.edges():
+                r=G_dir[ie[j]][je[j]]['recency'][1]
+                G_dir.remove_edge(ie[j],je[j])
+                G_dir.add_edge(add_site,je[j],recency=(0,r))
+            else:
+                r=G_dir[je[j]][ie[j]]['recency'][0]
+                G_dir.remove_edge(je[j],ie[j])
+                G.add_edge(je[j],add_site,recency=(r,0))
+            
+            #this part looks ugly but it's just adding 1 to all the recencies
+            for edge in G_dir.edges():
+                r=G_dir[edge[0]][edge[1]]['recency']
+                G_dir[edge[0]][edge[1]]['recency']=(r[0]+1,r[1]+1)
+             
+    WRITE("Rewiring over\n"+str(i))
+    
     
 end = time.time()
 WRITE("Iteration Time: "+str(end - start)+"\nStep:"+str(i))    

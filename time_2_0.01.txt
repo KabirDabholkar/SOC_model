@@ -1,67 +1,75 @@
 Starting
-Initializing graph
-Done initializing graph
 Starting simulation
 Step:0
 Starting avalanche processing
 Avalanche processing over
-Starting Rewiring
-Finding kmax
+Finding kmax indices
 Done kmax
+Starting Rewiring
 Rewiring over
+0
 Starting avalanche processing
 Avalanche processing over
-Starting Rewiring
-Finding kmax
+Finding kmax indices
 Done kmax
+Starting Rewiring
 Rewiring over
+1
 Starting avalanche processing
 Avalanche processing over
-Starting Rewiring
-Finding kmax
+Finding kmax indices
 Done kmax
+Starting Rewiring
 Rewiring over
+2
 Starting avalanche processing
 Avalanche processing over
-Starting Rewiring
-Finding kmax
+Finding kmax indices
 Done kmax
+Starting Rewiring
 Rewiring over
+3
 Starting avalanche processing
 Avalanche processing over
-Starting Rewiring
-Finding kmax
+Finding kmax indices
 Done kmax
+Starting Rewiring
 Rewiring over
+4
 Starting avalanche processing
 Avalanche processing over
-Starting Rewiring
-Finding kmax
+Finding kmax indices
 Done kmax
+Starting Rewiring
 Rewiring over
+5
 Starting avalanche processing
 Avalanche processing over
-Starting Rewiring
-Finding kmax
+Finding kmax indices
 Done kmax
+Starting Rewiring
 Rewiring over
+6
 Starting avalanche processing
 Avalanche processing over
-Starting Rewiring
-Finding kmax
+Finding kmax indices
 Done kmax
+Starting Rewiring
 Rewiring over
+7
 Starting avalanche processing
 Avalanche processing over
-Starting Rewiring
-Finding kmax
+Finding kmax indices
 Done kmax
+Starting Rewiring
 Rewiring over
+8
 Starting avalanche processing
 Avalanche processing over
-Starting Rewiring
-Finding kmax
+Finding kmax indices
 Done kmax
+Starting Rewiring
 Rewiring over
-Iteration Time: 18.296090364456177
+9
+Iteration Time: 1.3886146545410156
 Step:9

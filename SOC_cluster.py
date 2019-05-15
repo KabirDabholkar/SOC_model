@@ -6,6 +6,7 @@ import math
 import heapq
 import pickle as pkl
 import time
+import os
 
 F=0.001
 
@@ -14,6 +15,8 @@ save_loc="/home/kabir/SOC_model/data.pkl"
 save_loc="/storage/subhadra/kabir/output/SOC_model/data.pkl"
 
 time_loc="/home/kabir/SOC_model/time"+str(F)+".txt"
+
+os.remove(time_loc)
 
 def WRITE(text):
     with open(time_loc,'a') as time_file:
@@ -59,7 +62,7 @@ f = 1-f
 mean_degree = 4
 
 K = 4
-steps = 500
+steps = 100
 #tic
 np.random.seed(1)
 WRITE("Initializing graph")
@@ -148,19 +151,14 @@ for i in range(steps):
                 Ruse[c2,c1] = -1
     #"""
     
-    max_endpoints=[]
-    max_endpoints_r=[]
-    for edge in G.edges():
-        c1,c2=edge
-        if R[c1,c2] <= R[c2,c1]:
-            max_endpoints.append((c1,c2))
-            max_endpoints_r.append(R[c1,c2])
-        else:
-            max_endpoints.append((c2,c1))
-            max_endpoints_r.append(R[c2,c1])
-    
-    indices = np.array(heapq.nlargest(a, range(len(max_endpoints_r)), max_endpoints_r.__getitem__))
-    i,j=tuple(zip(*[max_endpoints[i] for i in indices]))
+    for c1 in range(N):
+        for c2 in range(N):
+            if Ruse[c1,c2] <= Ruse[c2,c1]:
+                Ruse[c1,c2] = -1
+            else:
+                Ruse[c2,c1] = -1
+
+    ie,je = my_kmax(Ruse,a)
     
     WRITE("Finding kmax")
     ie,je = my_kmax(Ruse,a)
