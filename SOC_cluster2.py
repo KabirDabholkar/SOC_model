@@ -70,7 +70,7 @@ f = 1-f
 mean_degree = 4.0
 
 K = 4
-steps = 500
+steps = 200
 
 WRITE("N="+str(N)+"\nf="+str(f)+"\nmean_degree="+str(mean_degree)+"\nK="+str(K)+"\nsteps="+str(steps))
 
@@ -157,7 +157,7 @@ for i in range(steps):
     ava = np.multiply((ava+temp1)>0,1)
     #xsave[i] = x
     a = np.sum(ava)
-    WRITE("Avalanche processing over")
+    WRITE("Avalanche processing over. Avalanche size:"+str(a))
 
  
     ##Rewiring
@@ -170,7 +170,7 @@ for i in range(steps):
             else:
                 Ruse[c2,c1] = -1
     #"""
-    WRITE("Finding "+str(a)+"max indices")    
+    WRITE("Finding "+str(a)+" max indices")    
     if a!=0:
         edges=list(G_dir.edges())
         
