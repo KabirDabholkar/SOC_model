@@ -11,7 +11,7 @@ import sys
 
 
 
-F=0.1
+F=0.001
 
 with open(os.getcwd()+"/outputloc.txt",'r') as f:
     outputloc=f.read().replace('\n','')
@@ -70,7 +70,7 @@ f = 1-f
 mean_degree = 4.0
 
 K = 4
-steps = 1000
+steps = 5000
 
 WRITE("N="+str(N)+"\nf="+str(f)+"\nmean_degree="+str(mean_degree)+"\nK="+str(K)+"\nsteps="+str(steps))
 
@@ -179,51 +179,40 @@ for i in range(steps):
                 Ruse[c2,c1] = -1
     #"""
     WRITE("Finding "+str(a)+" max indices")    
+    max_edges=[]
+    
+
     if a!=0:
         edges=list(G_dir.edges())
-        
         R=[max(G_dir[edge[0]][edge[1]]['recency']) for edge in edges] #takes maximum of the two endpoints for each edge
         indices = np.array(heapq.nlargest(a, range(len(R)), R.__getitem__))
         #print(indices)        
-        ie,je=tuple(zip(*[edges[ind] for ind in indices]))
-        """
-        print('Steps:',i)
-        print('a',a)
-        print('R',R)
-        print('indices',indices)
-        print(ie[0],je[0])
-        print(G_dir[ie[0]][je[0]]['recency'])#"""
-    WRITE("Done kmax")    
-    
-    
-    
-    WRITE("Starting Rewiring")
-    
-    for j in range(a):
-        if (je[j] != add_site) & (A[add_site,je[j]]==0):
+        max_edges=[edges[ind] for ind in indices]
 
-            if (ie[j],je[j]) in G_dir.edges():
-                r=G_dir[ie[j]][je[j]]['recency'][1]
-                G_dir.remove_edge(ie[j],je[j])
-                G_dir.add_edge(add_site,je[j],recency=(0,r))
-                
-            else:
-                r=G_dir[je[j]][ie[j]]['recency'][0]
-                G_dir.remove_edge(je[j],ie[j])
-                G_dir.add_edge(je[j],add_site,recency=(r,0))
+   
+    for (ie,je) in max_edges:
+        rec=G_dir[ie][je]['recency']
+        left_max=rec[0]>rec[1]
+        
+        fixed_endpoint=(ie,je)[not left_max]
+        ne=(add_site,fixed_endpoint)
             
-       
-            A[int(ie[j]),int(je[j])] = 0
-            A[int(je[j]),int(ie[j])] = 0
-            A[add_site,je[j]] = 1
-            A[je[j],add_site] = 1
+        if (fixed_endpoint != add_site) & (A[add_site,fixed_endpoint]==0): #A is symmetric so it doesn't matter
+            dir_cor=(ie,je) in G_dir.edges()
+            oe=(ie,je) #oe is old_edge
             
-            
-            
-            #this part looks ugly but it's just adding 1 to all the recencies
-            for edge in G_dir.edges():
-                r=G_dir[edge[0]][edge[1]]['recency']
-                G_dir[edge[0]][edge[1]]['recency']=(r[0]+1,r[1]+1)
+            r=G_dir[oe[0]][oe[1]]['recency'][left_max]
+            G_dir.remove_edge(*oe)
+            rec=(0,r)
+
+            G_dir.add_edge(*ne,recency=rec)
+
+
+            A[ie,je] = 0
+            A[je,ie] = 0
+            A[add_site,fixed_endpoint] = 1
+            A[fixed_endpoint,add_site] = 1
+    print(np.all(A == nx.to_numpy_matrix(G_dir.to_undirected(), dtype=np.int)))
     #print(np.all(A==nx.to_numpy_matrix(G_dir.to_undirected(), dtype=np.int)))        
     WRITE("Rewiring over")
     #A = nx.to_numpy_matrix(G_dir.to_undirected(), dtype=np.int)
