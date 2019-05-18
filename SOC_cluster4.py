@@ -12,8 +12,8 @@ import sys
 
 
 #Initial Conditions
-N = 10
-F = 0.01 #f leak (fraction of leak)
+N = 10000
+F = 0.0001 #f leak (fraction of leak)
 f = 1-F
 mean_degree = 4.0
 
@@ -28,7 +28,7 @@ with open(os.getcwd()+"/outputloc.txt",'r') as outputlocfile:
 #to_save={}
 save_loc=outputloc+"data_f"+str(F)+"N"+str(N)+"/"
 
-time_loc=save_loc+"time_2_f"+str(F)+"N"+str(N)+".txt"
+time_loc=save_loc+"time.txt"
 
 #time_loc="/storage/subhadra/kabir/output/SOC_model/time_2_"+str(F)+".txt"
 #if os.path.isfile(time_loc):
@@ -54,11 +54,11 @@ def avalanche(x,A,f,N):
     degree = np.array(np.sum(A,0))[0]
     degree = np.reshape(degree, (N,1))
     xc = np.reshape(degree + (degree==0), (N,1))
-    spikes = np.multiply(x>=xc, 1)
+    spikes = x>=xc
     ava = spikes.copy()
     while np.sum(np.multiply(degree,spikes))> 0:
-        ava = np.multiply((ava+spikes)>0,1)
-        spikes = np.multiply(x>=xc, 1)
+        ava = (ava+spikes)>0
+        spikes = x>=xc
         spikes = np.reshape(spikes,(N,1))
         x = x + A*spikes
         x = x - np.multiply(spikes,degree)
@@ -98,7 +98,7 @@ G_dir.add_nodes_from(range(N))
 G_dir.add_edges_from(G_undir.edges())
 
 
-A = nx.to_numpy_matrix(G_dir.to_undirected(), dtype=np.int)
+A = nx.to_numpy_matrix(G_dir.to_undirected(), dtype=np.bool)
 #fig = plt.figure(figsize=(5, 5))
 #plt.title("Adjacency Matrix")
 #plt.imshow(A,cmap="Greys",interpolation="none")   
