@@ -12,13 +12,13 @@ import sys
 
 
 #Initial Conditions
-N = 10000
-F = 0.0001 #f leak (fraction of leak)
+N = 1000
+F = 0.001 #f leak (fraction of leak)
 f = 1-F
 mean_degree = 4.0
 
 K = 4
-steps = 1000
+steps = 10000
 
 
 
@@ -47,27 +47,49 @@ def save_frame(step,A,dist):
     with open(save_loc+"step_"+str(step)+"_data.pkl","wb") as pickle_out:
         pkl.dump(step_data, pickle_out)
     
-
+"""
 def avalanche(x,A,f,N):
 
     count = 0
-    degree = np.array(np.sum(A,0))[0]
-    degree = np.reshape(degree, (N,1))
-    xc = np.reshape(degree + (degree==0), (N,1))
+    degree = np.array(np.sum(A,0))
+    #print(degree.shape)
+    xc = degree + (degree==0)
     spikes = x>=xc
     ava = spikes.copy()
     while np.sum(np.multiply(degree,spikes))> 0:
         ava = (ava+spikes)>0
         spikes = x>=xc
-        spikes = np.reshape(spikes,(N,1))
-        x = x + A*spikes
+        print(spikes.shape)
+        x = x + np.matmul(A,spikes)
+        x = x - np.multiply(spikes,degree)
+        x = x - (np.random.rand(N)>f)
+        x = np.multiply(x,(x>0))
+        count = count + 1
+
+    return [x,ava]
+"""
+def avalanche(x,A,f,N):
+
+    count = 0
+    degree = np.array(np.sum(A,0))
+    degree = np.reshape(degree, (N,1))
+    xc = np.reshape(degree + (degree==0), (N,1))
+    spikes = np.multiply(x>=xc, 1)
+    spikes = np.reshape(spikes,(N,1)) 
+    ava = spikes.copy()
+    while np.sum(np.multiply(degree,spikes))> 0:
+        ava = np.multiply((ava+spikes)>0,1)
+
+        spikes = x>=xc
+
+        
+        x = x + np.matmul(A,spikes)
         x = x - np.multiply(spikes,degree)
         x = x - (np.random.rand(N,1)>f)
         x = np.multiply(x,(x>0))
         count = count + 1
 
-    return [x,ava]
-    
+    return [x,ava]    
     
 def my_kmax(R,k):
     N = len(R)
@@ -99,6 +121,8 @@ G_dir.add_edges_from(G_undir.edges())
 
 
 A = nx.to_numpy_matrix(G_dir.to_undirected(), dtype=np.bool)
+A=np.asarray(A,dtype=np.bool)
+
 #fig = plt.figure(figsize=(5, 5))
 #plt.title("Adjacency Matrix")
 #plt.imshow(A,cmap="Greys",interpolation="none")   
@@ -119,7 +143,9 @@ nx.set_edge_attributes(G_dir,"recency",recency)
 #print()
 #print(G_dir.edges(data=True))
 
-degree = np.array(np.sum(A,0))[0]
+degree = np.array(np.sum(A,0),dtype=np.int32)
+degree=np.reshape(degree,(N,1))
+print(degree.shape)
 G_undir.clear()
 del(R)
 del(temp)
@@ -129,13 +155,14 @@ del(recency)
 
 #Initial State
 x = np.zeros((N,1));
+x=np.asarray(x,dtype=np.bool)
 for i in range(N):
     if degree[i]>0:
         np.random.seed(1)
         x[i]=np.random.randint(0,degree[i])
     else:
         x[i]=0
-        
+    
 xb = x
 
 count = 0
@@ -152,27 +179,39 @@ for i in range(steps):
     WRITE("Step: "+str(i))
     if np.mod(i,float(steps)/100) == 0: #
         dist = np.bincount(list(degree.flat))
-        x_axis = np.arange(0,max(degree)+1)
+        x_axis = np.arange(0,np.max(degree)+1)
         save_frame(i,A,[x_axis,dist])
-        #save_distribution.append([x_axis,dist])
-        #save_As.append(A.copy())
         
-        
-    #if np.mod(i,float(steps)/500) == 0:
-        #WRITE("Step:"+str(i))
-        
+                
         
     #Particle addition
     
     add_site = np.random.randint(0,N-1)
     
     x[add_site] = x[add_site] + 1
-    #print("Add site:",add_site)
-    #print('x',list(x.flat))
+
+
+
     WRITE("Starting avalanche processing")
+
     #Avalanche processing
-    degree = np.array(np.sum(A,0))[0]
+    """
+    degree = np.array(np.sum(A,0))
+    xc = degree + (degree==0)
+    
+    spikes = x>=xc
+
+    temp1 = np.zeros(N)
+    ava = spikes.copy()
+    if np.sum(np.multiply(degree,spikes))>0: 
+        [x,temp1] = avalanche(x,A,f,N)
+        count = count + 1
+    ava = (ava+temp1)>0
+    """
+    degree = np.array(np.sum(A,0))
+
     degree = np.reshape(degree, (N,1))
+    #print(degree.shape)
     xc = np.reshape(degree + (degree==0), (N,1))
     spikes = np.multiply(x>=xc, 1)
     ava = spikes.copy()
@@ -180,8 +219,8 @@ for i in range(steps):
     if np.sum(np.multiply(degree,spikes))>0: 
         [x,temp1] = avalanche(x,A,f,N)
         count = count + 1
-    ava = np.multiply((ava+temp1)>0,1)
     #xsave[i] = x
+    ava = np.multiply((ava+temp1)>0,1)
     a = np.sum(ava)
     avalanche_sizes.append(a)
     WRITE("Avalanche processing over. Avalanche size:"+str(a))
@@ -231,6 +270,7 @@ for i in range(steps):
             A[je,ie] = 0
             A[add_site,fixed_endpoint] = 1
             A[fixed_endpoint,add_site] = 1
+    
     #print(np.all(A == nx.to_numpy_matrix(G_dir.to_undirected(), dtype=np.int)))
     #print(np.all(A==nx.to_numpy_matrix(G_dir.to_undirected(), dtype=np.int)))        
     WRITE("Rewiring over")
