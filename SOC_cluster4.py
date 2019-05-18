@@ -12,34 +12,41 @@ import sys
 
 
 #Initial Conditions
-N = 10000
-f = 0.00001 #f leak (fraction of leak)
-f = 1-f
+N = 10
+F = 0.01 #f leak (fraction of leak)
+f = 1-F
 mean_degree = 4.0
 
 K = 4
-steps = 10000
+steps = 1000
 
 
 
 with open(os.getcwd()+"/outputloc.txt",'r') as outputlocfile:
     outputloc=outputlocfile.read().replace('\n','')
 
-to_save={}
-save_loc=outputloc+"data_f"+str(f)+"N"+str(N)+".pkl"
-#save_loc="/storage/subhadra/kabir/output/SOC_model/data.pkl"
+#to_save={}
+save_loc=outputloc+"data_f"+str(F)+"N"+str(N)+"/"
 
-time_loc=outputloc+"time_2_f"+str(f)+"N"+str(N)+".txt"
+time_loc=save_loc+"time_2_f"+str(F)+"N"+str(N)+".txt"
 
 #time_loc="/storage/subhadra/kabir/output/SOC_model/time_2_"+str(F)+".txt"
-if os.path.isfile(time_loc):
-    os.remove(time_loc)
-    
+#if os.path.isfile(time_loc):
+#    os.remove(time_loc)
+if not os.path.exists(save_loc[:-1]):
+    os.makedirs(save_loc[:-1])    
     
 ########Functions###################################################### 
 def WRITE(text):
     with open(time_loc,'a') as time_file:
         time_file.write(text+"\n")
+        
+        
+def save_frame(step,A,dist):
+    step_data={'A':A,'dist':dist}
+    with open(save_loc+"step_"+str(step)+"_data.pkl","wb") as pickle_out:
+        pkl.dump(step_data, pickle_out)
+    
 
 def avalanche(x,A,f,N):
 
@@ -133,11 +140,11 @@ xb = x
 
 count = 0
 #xsave = [0]*steps
-save_As=[]
-save_distribution = []
+#save_As=[]
+#save_distribution = []
 WRITE("Starting simulation")
 
-avalanche_size=[]
+avalanche_sizes=[]
 
 
 start = time.time()
@@ -146,10 +153,15 @@ for i in range(steps):
     if np.mod(i,float(steps)/100) == 0: #
         dist = np.bincount(list(degree.flat))
         x_axis = np.arange(0,max(degree)+1)
-        save_distribution.append([x_axis,dist])
-        save_As.append(A.copy())
+        save_frame(i,A,[x_axis,dist])
+        #save_distribution.append([x_axis,dist])
+        #save_As.append(A.copy())
+        
+        
     #if np.mod(i,float(steps)/500) == 0:
         #WRITE("Step:"+str(i))
+        
+        
     #Particle addition
     
     add_site = np.random.randint(0,N-1)
@@ -171,7 +183,7 @@ for i in range(steps):
     ava = np.multiply((ava+temp1)>0,1)
     #xsave[i] = x
     a = np.sum(ava)
-    avalanche_size.append(a)
+    avalanche_sizes.append(a)
     WRITE("Avalanche processing over. Avalanche size:"+str(a))
 
     
@@ -225,14 +237,14 @@ for i in range(steps):
     #A = nx.to_numpy_matrix(G_dir.to_undirected(), dtype=np.int)
 end = time.time()
 WRITE("Iteration Time: "+str(end - start))    
-to_save['save_distribution']=save_distribution
-to_save['save_As']=save_As
-to_save['avalanche_size']=avalanche_size
-to_save['init_cond']=init_cond
+#to_save['save_distribution']=save_distribution
+#to_save['save_As']=save_As
+#to_save['avalanche_size']=avalanche_size
+#to_save['init_cond']=init_cond
 #saving pickle
 
-with open(save_loc,"wb") as pickle_out:
-    pkl.dump(to_save, pickle_out)
+with open(save_loc+"avalanche_sizes.pkl","wb") as pickle_out:
+    pkl.dump(avalanche_sizes, pickle_out)
 
 
 
