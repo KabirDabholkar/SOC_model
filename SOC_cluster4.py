@@ -1,5 +1,5 @@
 #!/usr/bin/python 
-import numpy as np
+import bohrium as np
 import networkx as nx
 #import matplotlib.pyplot as plt
 import math
@@ -8,19 +8,19 @@ import pickle as pkl
 import time
 import os
 import sys
-
+import numpy
 
 
 #Initial Conditions
-N = 1000
-F = 0.001 #f leak (fraction of leak)
+N = 2000
+F = 0.0001 #f leak (fraction of leak)
 f = 1-F
 mean_degree = 4.0
 
 K = 4
 steps = 10000
-
-
+seed=1
+#np.random.seed(seed)
 
 with open(os.getcwd()+"/outputloc.txt",'r') as outputlocfile:
     outputloc=outputlocfile.read().replace('\n','')
@@ -43,15 +43,15 @@ def WRITE(text):
         
         
 def save_frame(step,A,dist):
-    step_data={'A':A,'dist':dist}
+    step_data={'A':A.copy2numpy(),'dist':dist}
     with open(save_loc+"step_"+str(step)+"_data.pkl","wb") as pickle_out:
         pkl.dump(step_data, pickle_out)
     
-"""
+
 def avalanche(x,A,f,N):
 
     count = 0
-    degree = np.array(np.sum(A,0))
+    degree = np.sum(A,0,dtype=np.int32)
     #print(degree.shape)
     xc = degree + (degree==0)
     spikes = x>=xc
@@ -59,8 +59,8 @@ def avalanche(x,A,f,N):
     while np.sum(np.multiply(degree,spikes))> 0:
         ava = (ava+spikes)>0
         spikes = x>=xc
-        print(spikes.shape)
-        x = x + np.matmul(A,spikes)
+
+        x = x + np.dot(A,spikes)
         x = x - np.multiply(spikes,degree)
         x = x - (np.random.rand(N)>f)
         x = np.multiply(x,(x>0))
@@ -82,15 +82,13 @@ def avalanche(x,A,f,N):
 
         spikes = x>=xc
 
-        
         x = x + np.matmul(A,spikes)
         x = x - np.multiply(spikes,degree)
         x = x - (np.random.rand(N,1)>f)
         x = np.multiply(x,(x>0))
         count = count + 1
-
     return [x,ava]    
-    
+"""    
 def my_kmax(R,k):
     N = len(R)
     f = np.ravel(R)
@@ -112,7 +110,7 @@ WRITE("N="+str(N)+"\nf="+str(f)+"\nmean_degree="+str(mean_degree)+"\nK="+str(K)+
 
 
 #np.random.seed(1)
-G_undir = nx.erdos_renyi_graph(N,mean_degree/N)
+G_undir = nx.erdos_renyi_graph(N,mean_degree/N,seed=seed)
 
 G_dir = nx.DiGraph()
 G_dir.add_nodes_from(range(N))
@@ -133,19 +131,18 @@ A=np.asarray(A,dtype=np.bool)
 #storex = np.zeros((N,steps))
 #storex_noava = np.zeros((N,steps))
 
-temp = np.arange(0,2*G_undir.number_of_edges())
+temp = np.arange(0,int(2*G_undir.number_of_edges()))
 R = [(temp[2*i],temp[2*i+1]) for i in range(G_undir.number_of_edges())]
 recency={}
 for edge,rec in zip(G_dir.edges(),R):
-    recency[edge]=rec
+    recency[edge]={'recency':rec}
 
-nx.set_edge_attributes(G_dir,"recency",recency)
+nx.set_edge_attributes(G_dir,recency)
 #print()
 #print(G_dir.edges(data=True))
 
 degree = np.array(np.sum(A,0),dtype=np.int32)
-degree=np.reshape(degree,(N,1))
-print(degree.shape)
+
 G_undir.clear()
 del(R)
 del(temp)
@@ -154,11 +151,10 @@ del(recency)
 
 
 #Initial State
-x = np.zeros((N,1));
-x=np.asarray(x,dtype=np.bool)
+x = np.zeros(N,dtype=np.int32)
 for i in range(N):
     if degree[i]>0:
-        np.random.seed(1)
+        #np.random.seed(1)
         x[i]=np.random.randint(0,degree[i])
     else:
         x[i]=0
@@ -176,10 +172,11 @@ avalanche_sizes=[]
 
 start = time.time()
 for i in range(steps):
+    print('Step:',i)
     WRITE("Step: "+str(i))
     if np.mod(i,float(steps)/100) == 0: #
-        dist = np.bincount(list(degree.flat))
-        x_axis = np.arange(0,np.max(degree)+1)
+        dist = list(np.bincount(list(degree.flat)))
+        x_axis = list(np.arange(0,int(np.max(degree)+1)))   
         save_frame(i,A,[x_axis,dist])
         
                 
@@ -208,21 +205,23 @@ for i in range(steps):
         count = count + 1
     ava = (ava+temp1)>0
     """
-    degree = np.array(np.sum(A,0))
+    degree = np.sum(A,0,dtype=np.int32)
 
-    degree = np.reshape(degree, (N,1))
+    #degree = np.reshape(degree, (N,1))
     #print(degree.shape)
-    xc = np.reshape(degree + (degree==0), (N,1))
-    spikes = np.multiply(x>=xc, 1)
+    xc = degree + (degree==0)
+    spikes = x>=xc
     ava = spikes.copy()
-    temp1 = np.zeros((N,1))
+    temp1 = np.zeros(N,dtype=np.bool)
     if np.sum(np.multiply(degree,spikes))>0: 
         [x,temp1] = avalanche(x,A,f,N)
         count = count + 1
+        
     #xsave[i] = x
-    ava = np.multiply((ava+temp1)>0,1)
+    ava = (ava+temp1)>0
     a = np.sum(ava)
     avalanche_sizes.append(a)
+    print 'Avalanche size'+str(a)
     WRITE("Avalanche processing over. Avalanche size:"+str(a))
 
     
@@ -284,7 +283,7 @@ WRITE("Iteration Time: "+str(end - start))
 #saving pickle
 
 with open(save_loc+"avalanche_sizes.pkl","wb") as pickle_out:
-    pkl.dump(avalanche_sizes, pickle_out)
+    pkl.dump(avalanche_sizes.copy2numpy(), pickle_out)
 
 
 
