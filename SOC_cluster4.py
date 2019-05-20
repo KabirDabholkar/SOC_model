@@ -283,7 +283,7 @@ WRITE("Iteration Time: "+str(end - start))
 #saving pickle
 
 with open(save_loc+"avalanche_sizes.pkl","wb") as pickle_out:
-    pkl.dump(avalanche_sizes.copy2numpy(), pickle_out)
+    pkl.dump(avalanche_sizes,pickle_out)
 
 
 
