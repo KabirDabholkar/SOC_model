@@ -12,13 +12,13 @@ import numpy
 
 
 #Initial Conditions
-N = 2000
+N = 40
 F = 0.001 #f leak (fraction of leak)
 f = 1-F
 mean_degree = 4.0
 
 K = 4
-steps = 10000
+steps = 10
 seed=1
 #np.random.seed(seed)
 
@@ -60,11 +60,11 @@ def avalanche(x,A,f,N):
         ava = (ava+spikes)>0
         spikes = x>=xc
 		
-	add_particles=np.dot(A,spikes)
+        add_particles=np.dot(A,spikes)
         #subtract=np.multiply(np.random.rand(N),spikes)>f
-	nonzero=add_particles.nonzero()[0]
-	add_particles[nonzero]=np.random.rand(len(nonzero))>f #leak of avalanching particles
-		
+        nonzero=add_particles.nonzero()[0]
+        add_particles[nonzero]=np.random.rand(len(nonzero))>f #leak of avalanching particles
+
         x = x + add_particles
         x = x - np.multiply(spikes,degree)
         #x = x - (np.random.rand(N)>f)
@@ -106,7 +106,7 @@ def my_kmax(R,k):
     
 
 WRITE("Networkx version:"+str(nx.__version__))
-
+print("Networkx version:"+str(nx.__version__))
 
 
 init_cond={'N':N,'f':f,'mean_degree':mean_degree,'K':K,'steps':steps}
@@ -211,7 +211,7 @@ for i in range(steps):
     ava = (ava+temp1)>0
     """
     degree = np.sum(A,0,dtype=np.int32)
-
+    print("Particles",np.sum(x))
     #degree = np.reshape(degree, (N,1))
     #print(degree.shape)
     xc = degree + (degree==0)
@@ -224,9 +224,9 @@ for i in range(steps):
         
     #xsave[i] = x
     ava = (ava+temp1)>0
-    a = np.sum(ava)
+    a = int(np.sum(ava))
     avalanche_sizes.append(a)
-    print 'Avalanche size'+str(a)
+    print('Avalanche size',a)
     WRITE("Avalanche processing over. Avalanche size:"+str(a))
 
     
