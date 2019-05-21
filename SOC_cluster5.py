@@ -146,6 +146,8 @@ nx.set_edge_attributes(G_dir,recency)
 #print()
 #print(G_dir.edges(data=True))
 
+print(G_dir.edges(data=True))
+
 degree = np.array(np.sum(A,0),dtype=np.int32)
 
 G_undir.clear()
@@ -253,7 +255,7 @@ for i in range(steps):
 
    
     for (ie,je) in max_edges:
-        rec=G_dir[ie][je]['recency']
+        rec=G_dir[je][ie]['recency']
         left_max=rec[0]>rec[1]
         
         fixed_endpoint=(ie,je)[not left_max]
